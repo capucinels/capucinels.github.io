@@ -1,1 +1,1 @@
-https://capucinels.gtihub.io
+https://capucinels.github.io
