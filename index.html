@@ -5,58 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cportfolio</title>
     <!-- link:css + tab -->
+    
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/wrc1wud.css">
 
 
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+
     <header class="header">
 
-    <h1><a href="index.html"><img src="img/logo.svg" alt="cpcn logo" width="64" height="64"></a></h1>
+
+        
+    <h1><a href="index.html" class="no-block">
+        <img src="img/logoBon.svg" alt="cpcn logo" width="64" height="64" class="logo-rotate">
+    </a></h1>
     <nav class=" header-nav">
         <a href="https://www.instagram.com/capucinesls/">instagram</a>
-        <a href="contact.html">contact</a>
-        <a href="a-propos.html">à propos</a>
+        <a href="#" id="contactToggle">contact</a>
+        <a href="##" id="aproposToggle">à propos</a>
     </nav>
+
+
 
     </header>
 
+    <div class="contact-panel" id="contactPanel">
+    <p class="contact-title">contactez moi!</p>
+    <p>
+        07 55 64 07 72 <br>
+        <a href="mailto:sals.capucine@gmail.com">sals.capucine@gmail.com</a> <br>
+    </p>
+</div>
+    
+    <div class="cursor"></div>
+
+    <p>en 2ème année en DN MADE à <a href="https://ecole-lycee-renoir-paris.fr/">l'ELMAD Auguste Renoir</a>, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate dignissimos qui possimus, quos quae ipsa nisi libero vitae nemo nobis ad suscipit ab repudiandae earum error animi fuga, adipisci dolores.</p>
+
     <nav class="nav">
         <a href="apocalypse.html">
-        <img src="https://picsum.photos/id/237/200/300" alt="lorem demo">
+        <img src="IMG-SRC-HTML/apocalypse_final.jpeg" alt="apocalypse_final"> 
+        <span class="label">monotype</span>
         <span>apocalypse</span>
     </a>
 
-        <a href="a-table.html"> 
-        <img src="https://picsum.photos/id/242/200/300" alt="lorem demo">
-        <span>à table</span>
+        <a href="fanzine.html">
+        <img src="IMG-SRC-HTML/mag1ere.png" alt="mag1ere">
+        <span class="label">fanzine</span>
+        <span>la dernière chance</span>
     </a>
 
-        <a href="apocalypse.html">
-        <img src="https://picsum.photos/id/237/200/300" alt="lorem demo">
-        <span>fanzine</span>
+        <a href="water.html">
+        <img src="IMG-SRC-HTML/water_couv.jpeg" alt="water_couv">
+        <span class="label">TouchDesigner</span>
+        <span>Water</span>
     </a>
 
-        <a href="apocalypse.html">
-        <img src="https://picsum.photos/id/237/200/300" alt="lorem demo">
+        <a href="banlieues.html">
+        <img src="IMG-SRC-HTML/banlieues_ouvert.png">
+        <span class="label">éditon, risographie</span>
         <span>banlieues paname</span>
     </a>
-
-        <a href="apocalypse.html">
-        <img src="https://picsum.photos/id/237/200/300" alt="lorem demo">
-        <span>chroniques</span>
+        
+        <a href="no-more-reality.html"> 
+        <img src="IMG-SRC-HTML/nmr_mockup.jpeg" alt="lorem demo">
+        <span class="label">affiches</span>
+        <span>no more reality</span>
     </a>
 
-        <a href="apocalypse.html">
-        <img src="https://picsum.photos/id/237/200/300" alt="lorem demo">
+        <a href="tas-la-recette.html">
+        <img src="https://picsum.photos/id/237/400/600" alt="lorem demo">
+        <span class="label">éditon</span>
         <span>t'as la recette?</span>
     </a>
 </nav>
+
+
+    <script>
+const cursor = document.querySelector('.cursor');
+const items = document.querySelectorAll('.nav a');
+
+document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+});
+
+items.forEach(item => {
+    const label = item.querySelector('.label').textContent;
+
+    item.addEventListener('mouseenter', () => {
+        cursor.textContent = label;
+        cursor.style.opacity = 1;
+    });
+
+    item.addEventListener('mouseleave', () => {
+        cursor.style.opacity = 0;
+    });
+});
+</script>
+
+
+    <script>
+    document.getElementById('contactToggle').addEventListener('click', function (e) {
+        e.preventDefault(); 
+        document.getElementById('contactPanel').classList.toggle('open');
+    });
+    </script>
+
+    <script>
+    document.getElementById('aproposToggle').addEventListener('click', function (e) {
+        e.preventDefault(); 
+        document.getElementById('aproposPanel').classList.toggle('open');
+    });
+    </script>
+
+
+<div class="apropos-panel" id="aproposPanel">
+
+  <div class="apropos-content">
+    <h2>À propos</h2>
+
+    <p>
+      Je suis Capucine, étudiante en DN MADE Graphisme à l’ELMAD Auguste Renoir.  
+      Passionnée par l’édition, l’image et les narrations visuelles, j’expérimente entre print et numérique.
+    </p>
+
+    <div class="apropos-img-wrapper">
+      <img src="IMG-SRC-HTML/jsp woaw2.png" alt="jsp_woaw2" class="img-normal">
+      <img src="IMG-SRC-HTML/jsp woaw3.png" alt="jsp_woaw3" class="img-hover">
+    </div>
+  </div>
+
+  <div class="apropos-footer">
+    <a href="IMG-SRC-HTML/Capucine_Sals_CV.pdf" download class="footer-link left">CV</a>
+    <a href="IMG-SRC-HTML/Capucine_Sals_CV.pdf" download class="footer-link right">PORTFOLIO</a>
+  </div>
+
+</div>
 
 </body>
 </html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>- t'as la recette?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="recette project">
+    <header class="header">
+    <h1><a href="index.html" class="no-block">
+        <img src="img/logoBon.svg" alt="cpcn logo" width="64" height="64" class="logo-rotate">
+    </a></h1>
+    <nav class=" header-nav">
+        <a href="https://www.instagram.com/capucinesls/">instagram</a>
+        <a href="#" id="contactToggle">contact</a>
+        <a href="##" id="aproposToggle">à propos</a>
+    </nav>
+    </header>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="contact-panel" id="contactPanel">
+    <p class="contact-title">contactez moi!</p>
+    <p>
+        07 55 64 07 72 <br>
+        <a href="mailto:sals.capucine@gmail.com">sals.capucine@gmail.com</a> <br>
+    </p>
+</div>
+
+    <script>
+    document.getElementById('contactToggle').addEventListener('click', function (e) {
+        e.preventDefault(); 
+        document.getElementById('contactPanel').classList.toggle('open');
+    });
+    </script>
+
+
+    <script>
+    document.getElementById('aproposToggle').addEventListener('click', function (e) {
+        e.preventDefault(); 
+        document.getElementById('aproposPanel').classList.toggle('open');
+    });
+    </script>
+
+    <div class="apropos-panel" id="aproposPanel">
+
+  <div class="apropos-content">
+    <h2>À propos</h2>
+
+    <p>
+      Je suis Capucine, étudiante en DN MADE Graphisme à l’ELMAD Auguste Renoir.  
+      Passionnée par l’édition, l’image et les narrations visuelles, j’expérimente entre print et numérique.
+    </p>
+
+    <div class="apropos-img-wrapper">
+      <img src="IMG-SRC-HTML/jsp woaw2.png" alt="jsp_woaw2" class="img-normal">
+      <img src="IMG-SRC-HTML/jsp woaw3.png" alt="jsp_woaw3" class="img-hover">
+    </div>
+  </div>
+
+  <div class="apropos-footer">
+    <a href="IMG-SRC-HTML/Capucine_Sals_CV.pdf" download class="footer-link left">CV</a>
+    <a href="IMG-SRC-HTML/Capucine_Sals_CV.pdf" download class="footer-link right">PORTFOLIO</a>
+  </div>
+</body>
+</html>

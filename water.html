@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>- water</title>
+    <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body class="water project">
+    
+
+    <header class="header">
+
+
+        
+    <h1><a href="index.html" class="no-block">
+        <img src="img/logoBon.svg" alt="cpcn logo" width="64" height="64" class="logo-rotate">
+    </a></h1>
+    <nav class=" header-nav">
+        <a href="https://www.instagram.com/capucinesls/">instagram</a>
+        <a href="#" id="contactToggle">contact</a>
+        <a href="##" id="aproposToggle">à propos</a>
+    </nav>
+
+
+
+    </header>
+
+    <div class="contact-panel" id="contactPanel">
+    <p class="contact-title">contactez moi!</p>
+    <p>
+        07 55 64 07 72 <br>
+        <a href="mailto:sals.capucine@gmail.com">sals.capucine@gmail.com</a> <br>
+    </p>
+</div>
+
+
+
+
+
+<div class="project-containeer">
+    <div class="teeexte">
+        <h2>Water</h2>
+        <p>Projet personnel <br>expérimentations réalisées sur TouchDesigner autour d’une base sonore : l’instrumental de Water.le visuel est directement relié au son, générant des mouvements et variations réactives, notamment lors des impacts plus marqués comme les kicks. l’objectif était d’explorer la relation entre rythme, modulation et image en temps réel.
+        <br> <br> <a href="https://www.youtube.com/watch?v=Nc4_DQ-infU&pp=ygUYaW5zdHJ1bWVudGFsIHdhdGVyIGthbnll0gcJCQsKAYcqIYzv">lien vers Water (instrumental)</a>
+        </p>
+    </div>
+
+    <nav class="navD">
+        <div class="item big">
+            <video controls>
+            <source src="IMG-SRC-HTML/water_video.mov"></video>
+            <span>rendu vidéo + son</span>
+        </div>
+
+        <div class="item small">
+            <img src="IMG-SRC-HTML/water_capture.png" alt="water_capture"> 
+        </div>
+
+        <div class="item small2">
+            <img src="IMG-SRC-HTML/water_capture.png" alt="water_capture"> 
+            <span>vidéo originale</span>
+        </div>
+        
+
+    </nav> 
+</div>
+
+
+
+
+
+
+    <script>
+    document.getElementById('contactToggle').addEventListener('click', function (e) {
+        e.preventDefault(); 
+        document.getElementById('contactPanel').classList.toggle('open');
+    });
+    </script>
+
+
+    <script>
+    document.getElementById('aproposToggle').addEventListener('click', function (e) {
+        e.preventDefault(); 
+        document.getElementById('aproposPanel').classList.toggle('open');
+    });
+    </script>
+
+
+<div class="apropos-panel" id="aproposPanel">
+
+  <div class="apropos-content">
+    <h2>À propos</h2>
+
+    <p>
+      Je suis Capucine, étudiante en DN MADE Graphisme à l’ELMAD Auguste Renoir.  
+      Passionnée par l’édition, l’image et les narrations visuelles, j’expérimente entre print et numérique.
+    </p>
+
+    <div class="apropos-img-wrapper">
+      <img src="IMG-SRC-HTML/jsp woaw2.png" alt="jsp_woaw2" class="img-normal">
+      <img src="IMG-SRC-HTML/jsp woaw3.png" alt="jsp_woaw3" class="img-hover">
+    </div>
+  </div>
+
+  <div class="apropos-footer">
+    <a href="IMG-SRC-HTML/Capucine_Sals_CV.pdf" download class="footer-link left">CV</a>
+    <a href="IMG-SRC-HTML/Capucine_Sals_CV.pdf" download class="footer-link right">PORTFOLIO</a>
+  </div>
+
+</div>
+
+</body>
+</html>
