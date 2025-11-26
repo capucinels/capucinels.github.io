@@ -26,6 +26,10 @@ img{
     display: block;
 }
 
+.nav{
+    padding-top: 40px;
+}
+
 .nav a img {
     transition: 0.2s ease; 
 }
@@ -60,6 +64,14 @@ a{
     opacity: 0;
     transition: opacity 0.15s ease;
     z-index: 999;
+}
+
+.footer{
+    font-size: 8px;
+    font-weight: 200;
+    text-align: center;
+    justify-items: center;
+    padding-top: 20px;
 }
 
 /*.nav a {
@@ -258,6 +270,10 @@ a{
 
 /*water*/
 
+.water-project{
+    background: black;
+}
+
 .project-containeer {
     display: grid;
     grid-template-columns: 300px 1fr;
@@ -274,6 +290,7 @@ a{
     margin-left: 0px;
     padding-left: 0px;
     text-decoration: none;
+    color: whitesmoke;
 }
 
 .teeexte h2{
@@ -294,6 +311,7 @@ a{
     display: block;
     padding: 1px;
     font-weight: 200;
+    color: whitesmoke;
 }
 
 .navD img,
